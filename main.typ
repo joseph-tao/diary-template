@@ -1,13 +1,13 @@
 #import "template/template.typ": *
 
 #show: project.with(
-  title: "岁月留痕",
-  author: "匿名作者"
+  title: [日记标题],
+  author: "作者",
+  show-name: false
 )
 
-#include "src/prologue.typ"
+#include "src/01-prologue.typ"
+#include "src/02-diary.typ"
+#include "src/03-appendix.typ"
+#include "src/04-epilogue.typ"
 
-#include "src/1970-01.typ"
-#include "src/1970-02.typ"
-
-#include "src/epilogue.typ"

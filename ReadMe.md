@@ -12,16 +12,17 @@ make watch # 实时增量编译
 make clean # 清除构建产物
 ```
 
-## 特点
+**部分功能展示在“前言”章节。**
 
-- **纯中文排版**: 章节和页码均使用大写中文排版
-- **为日记优化**: 小章节不记入目录、不显示章节号、每章节自动换页等
+## 功能
+
+- **日记与日期**: 使用 `diary-entry` 与 `diary-ref` 实现日记管理和引用
+- **Todo 动态列表**: 使用 `todo` 添加待办事项，`show-todo` 显示所有待办事项，并可点击跳转回源位置
+- **常用样式**：提供诗文、隐藏姓名、链接及自定义列表等组件和样式
 
 ## 目录结构
 
+- `template/template.typ`: 模板，只在需要微调修改
 - `main.typ`: 主文件，在此 `#include` 日记的内容
 - `src/`: 各个章节
 
-## 预览
-
-[typst.app 链接](https://typst.app/project/r6bKHoYxtSgmq45jNGpdK2)
