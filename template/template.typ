@@ -73,10 +73,15 @@
 }
 
 // diary entry and ref
-#let diary-entry(date) = [
+#let diary-entry(date, ..additional) = [
+  #let conn = " " + sym.dot + " "
+  #let heading-text = date-fmt(date)
+  #if additional.pos() != () {
+    heading-text += conn + additional.pos().join(conn)
+  }
   #heading(
     level: 2,
-    date-fmt(date)
+    heading-text
   )
   #label("diary:" + date)
   #state("date").update(date)
